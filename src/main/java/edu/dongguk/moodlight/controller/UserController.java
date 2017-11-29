@@ -27,10 +27,6 @@ public class UserController {
 
     @PostMapping
     public void addUser(@RequestBody User user){
-        System.out.println(user.getToken());
-        System.out.println(user.getEmail());
-        System.out.println(user.getMoodLight());
-        System.out.println(user.getName());
         userMapper.insertUser(user);
 
     }
