@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ColorMapper {
 
-    @Insert("INSERT INTO COLORS (token, rgb, flag} VALUES (#{token}, #{rgb}, #{flag})")
+    @Insert({"INSERT INTO COLORS (token, rgb, flag) VALUES (#{token}, #{rgb}, #{flag})"})
     void insertColor(Color color);
 
     @Update("Update COROLS " +
