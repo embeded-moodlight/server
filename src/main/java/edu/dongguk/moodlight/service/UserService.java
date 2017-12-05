@@ -1,0 +1,27 @@
+package edu.dongguk.moodlight.service;
+
+import edu.dongguk.moodlight.domain.User;
+import edu.dongguk.moodlight.mapper.UserMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class UserService {
+
+    private UserMapper userMapper;
+
+    @Autowired
+    UserService(UserMapper userMapper){
+        this.userMapper = userMapper;
+    }
+
+    public void addUser(User user){
+        userMapper.insertUser(user);
+    }
+
+    public List<User> getUsers(){
+        return userMapper.findAll();
+    }
+}

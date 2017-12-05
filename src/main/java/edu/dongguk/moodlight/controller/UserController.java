@@ -1,33 +1,30 @@
 package edu.dongguk.moodlight.controller;
 
 import edu.dongguk.moodlight.domain.User;
-import edu.dongguk.moodlight.persistence.UserMapper;
-import org.slf4j.LoggerFactory;
+import edu.dongguk.moodlight.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
 
-    private UserMapper userMapper;
+    private UserService userService;
 
     @Autowired
-    UserController(UserMapper userMapper){
-        this.userMapper = userMapper;
+    UserController(UserService userService){
+        this.userService = userService;
     }
 
     @GetMapping
     public List<User> getUsers(){
-        return userMapper.findAll();
+        return userService.getUsers();
     }
 
     @PostMapping
     public void addUser(@RequestBody User user){
-        userMapper.insertUser(user);
-
+        userService.addUser(user);
     }
 }
