@@ -7,10 +7,10 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class User {
-    private String token;
-    private String email;
-    private String name;
-    private String moodLight;
+public class UserDTO {
 
+    private String token;
+    private User user;
+    private Color[] colors;
+    private Diffuser[] diffusers;
 }

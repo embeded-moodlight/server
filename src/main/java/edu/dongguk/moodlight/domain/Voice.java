@@ -20,5 +20,4 @@ public class Voice {
     private Date date;
     private String contentType;
     private long length;
-
 }

@@ -17,7 +17,8 @@ public class UserService {
         this.userMapper = userMapper;
     }
 
-    public void addUser(User user){
+    public void addUser(String token, User user){
+        user.setToken(token);
         userMapper.insertUser(user);
     }
 
