@@ -1,5 +1,7 @@
 package edu.dongguk.moodlight.service;
 
+import com.sun.deploy.net.HttpResponse;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import edu.dongguk.moodlight.domain.Voice;
 import edu.dongguk.moodlight.mapper.FileMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,11 +9,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -28,7 +32,6 @@ public class FileService {
 
     @Transactional
     public void addVoice(Voice voice, MultipartFile file) {
-        int fileNum = fileMapper.insertVoiceMeta(voice);
 
         String formattedDate = BASE_DIR + new SimpleDateFormat("yyyy" + File.separator + "MM" + File.separator + "dd").format(new Date());
 
@@ -39,8 +42,6 @@ public class FileService {
         }
 
         String uuid = UUID.randomUUID().toString();
-
-        voice.setVoiceNum(fileNum);
         voice.setVoiceName(file.getOriginalFilename());
         voice.setSaveVoiceName(formattedDate + File.separator + uuid);
         voice.setContentType(file.getContentType());
@@ -59,6 +60,15 @@ public class FileService {
         }
 
         fileMapper.insertVoiceFile(voice);
+        fileMapper.insertVoiceMeta(voice);
+    }
+
+    public List<Voice> getVoicesByUser(String token){
+        return fileMapper.selectVoicesByUser(token);
+    }
+
+    public Voice getVoiceByVoiceNum(int voiceNum){
+        return fileMapper.selectVoiceByVoiceNum(voiceNum);
     }
 
 }

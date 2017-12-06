@@ -13,10 +13,9 @@ public interface ColorMapper {
     @Insert({"INSERT INTO COLORS (token, rgb, flag) VALUES (#{token}, #{rgb}, #{flag})"})
     void insertColor(Color color);
 
-    @Update("Update COROLS " +
+    @Update("UPDATE COLORS " +
             "SET rgb = #{rgb}, flag = #{flag} " +
             "WHERE token = #{token}")
     void updateColor(Color color);
-
 
 }
