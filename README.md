@@ -12,9 +12,11 @@
 — COLORS
 CREATE TABLE  COLORS(
 token varchar(30) not null,
-rgb int not null,
+r int not null,
+g int not null,
+b int not null,
 flag int not null default 0,
-primary key (token, rgb)
+primary key (token, r, g, b)
 );
 
 —VOICE_MAIL
