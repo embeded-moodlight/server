@@ -82,16 +82,17 @@ user 등록시 color와 diffuesr정보를 한꺼번에 넘김
 <pre><code>
 //json  
  {
-	"token" : "AIJD832s",
+	"token" : "AIJD232131832s",
 	"user" : {
 		"email" : "juhyung0818@naver.com",
 		"name" : "juhyung",
 		"moodLight" : "asflu8a3hiwfia38ao8vy9"
 	},
 	"colors" : [
-		{"rgb" : 1, "flag" : 0},
-		{"rgb" : 2, "flag" : 1},
-		{"rgb" : 3, "flag" : 1}
+		{"r" : 1, "g" : 1, "b" : 1, "flag" : 0},
+		{"r" : 2, "g" : 1, "b" : 1, "flag" : 0},
+		{"r" : 3, "g" : 3, "b" : 2, "flag" : 1},
+		{"r" : 4, "g" : 4, "b" : 121, "flag" : 0}
 	],
 	"diffusers" : [
 		{"diffuserName" : "orange", "flag" : 1},
