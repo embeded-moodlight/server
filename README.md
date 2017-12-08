@@ -77,6 +77,7 @@ URI|method|기능설명
 ----|-------|-----  
 /api/users|GET|모든 유저 목록 보기  
 /api/users|POST|유저 등록(회원가입)  
+/api/users|PUT|mood light 
 
 user 등록시 color와 diffuesr정보를 한꺼번에 넘김  
 <pre><code>
