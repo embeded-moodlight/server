@@ -1,6 +1,5 @@
 package edu.dongguk.moodlight.controller;
 
-import com.sun.deploy.net.HttpResponse;
 import edu.dongguk.moodlight.domain.Voice;
 import edu.dongguk.moodlight.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,7 +62,6 @@ public class FileContoller {
             return false;
         } else {
             response.setHeader("Content-Disposition", "inline; filename=\"" + voice.getVoiceName() + "\";");
-            // 구브라우저 미구현.
             response.setHeader("Content-Transfer-Encoding", "binary");
             response.setHeader("Content-Type", voice.getContentType());
             response.setHeader("Content-Length", "" + voice.getLength());

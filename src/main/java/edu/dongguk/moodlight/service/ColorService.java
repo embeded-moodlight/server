@@ -3,6 +3,7 @@ package edu.dongguk.moodlight.service;
 import edu.dongguk.moodlight.domain.Color;
 import edu.dongguk.moodlight.mapper.ColorMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,8 +16,12 @@ public class ColorService {
         this.colorMapper = colorMapper;
     }
 
-    public void addColor(Color color){
-        colorMapper.insertColor(color);
+    public void addColor(Color color) {
+        try {
+            colorMapper.insertColor(color);
+        } catch(DuplicateKeyException e){
+            return;
+        }
     }
 
     public void addColors(String token, Color[] colors){

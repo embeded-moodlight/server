@@ -1,0 +1,359 @@
+2017:12:20 13:54:32.323 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'servletConfigInitParams' with lowest search precedence 
+2017:12:20 13:54:32.351 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'servletContextInitParams' with lowest search precedence 
+2017:12:20 13:54:32.351 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'systemProperties' with lowest search precedence 
+2017:12:20 13:54:32.352 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'systemEnvironment' with lowest search precedence 
+2017:12:20 13:54:32.352 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Initialized StandardServletEnvironment with PropertySources [StubPropertySource {name='servletConfigInitParams'}, StubPropertySource {name='servletContextInitParams'}, MapPropertySource {name='systemProperties'}, SystemEnvironmentPropertySource {name='systemEnvironment'}] 
+2017:12:20 13:54:32.651 INFO  --- [main] e.d.moodlight.MoodlightApplication : Starting MoodlightApplication on yunjuhyeongui-MacBook-Air.local with PID 1289 (/Users/YJH/Downloads/moodlight/out/production/classes started by YJH in /Users/YJH/Downloads/moodlight) 
+2017:12:20 13:54:32.653 INFO  --- [main] e.d.moodlight.MoodlightApplication : No active profile set, falling back to default profiles: default 
+2017:12:20 13:54:32.776 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e82df6a: startup date [Wed Dec 20 13:54:32 KST 2017]; root of context hierarchy 
+2017:12:20 13:54:34.729 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'applicationConfig: [classpath:/application.properties]' with search precedence immediately lower than 'applicationConfigurationProperties' 
+2017:12:20 13:54:34.729 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Removing PropertySource 'applicationConfigurationProperties' 
+2017:12:20 13:54:34.729 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Removing PropertySource 'defaultProperties' 
+2017:12:20 13:54:36.203 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2017:12:20 13:54:36.234 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2017:12:20 13:54:36.237 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.23 
+2017:12:20 13:54:36.462 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2017:12:20 13:54:36.463 DEBUG --- [localhost-startStop-1] o.s.web.context.ContextLoader : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT] 
+2017:12:20 13:54:36.463 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 3687 ms 
+2017:12:20 13:54:36.664 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2017:12:20 13:54:36.671 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2017:12:20 13:54:36.672 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2017:12:20 13:54:36.673 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2017:12:20 13:54:36.674 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2017:12:20 13:54:36.747 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Replacing PropertySource 'servletContextInitParams' with 'servletContextInitParams' 
+2017:12:20 13:54:37.417 WARN  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'colorController' defined in file [/Users/YJH/Downloads/moodlight/out/production/classes/edu/dongguk/moodlight/controller/ColorController.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [edu.dongguk.moodlight.controller.ColorController]: Constructor threw exception; nested exception is java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to java.util.logging.Logger 
+2017:12:20 13:54:37.419 INFO  --- [main] o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2017:12:20 13:54:37.444 INFO  --- [main] o.s.b.a.l.AutoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled. 
+2017:12:20 13:54:37.454 ERROR --- [main] o.s.boot.SpringApplication : Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'colorController' defined in file [/Users/YJH/Downloads/moodlight/out/production/classes/edu/dongguk/moodlight/controller/ColorController.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [edu.dongguk.moodlight.controller.ColorController]: Constructor threw exception; nested exception is java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to java.util.logging.Logger
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at edu.dongguk.moodlight.MoodlightApplication.main(MoodlightApplication.java:16)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [edu.dongguk.moodlight.controller.ColorController]: Constructor threw exception; nested exception is java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to java.util.logging.Logger
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:271)
+	... 18 common frames omitted
+Caused by: java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be cast to java.util.logging.Logger
+	at edu.dongguk.moodlight.controller.ColorController.<init>(ColorController.java:15)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	... 20 common frames omitted
+2017:12:20 13:54:55.837 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'servletConfigInitParams' with lowest search precedence 
+2017:12:20 13:54:55.855 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'servletContextInitParams' with lowest search precedence 
+2017:12:20 13:54:55.856 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'systemProperties' with lowest search precedence 
+2017:12:20 13:54:55.857 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'systemEnvironment' with lowest search precedence 
+2017:12:20 13:54:55.857 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Initialized StandardServletEnvironment with PropertySources [StubPropertySource {name='servletConfigInitParams'}, StubPropertySource {name='servletContextInitParams'}, MapPropertySource {name='systemProperties'}, SystemEnvironmentPropertySource {name='systemEnvironment'}] 
+2017:12:20 13:54:55.993 INFO  --- [main] e.d.moodlight.MoodlightApplication : Starting MoodlightApplication on yunjuhyeongui-MacBook-Air.local with PID 1305 (/Users/YJH/Downloads/moodlight/out/production/classes started by YJH in /Users/YJH/Downloads/moodlight) 
+2017:12:20 13:54:55.993 INFO  --- [main] e.d.moodlight.MoodlightApplication : No active profile set, falling back to default profiles: default 
+2017:12:20 13:54:56.160 INFO  --- [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e82df6a: startup date [Wed Dec 20 13:54:56 KST 2017]; root of context hierarchy 
+2017:12:20 13:54:57.628 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'applicationConfig: [classpath:/application.properties]' with search precedence immediately lower than 'applicationConfigurationProperties' 
+2017:12:20 13:54:57.629 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Removing PropertySource 'applicationConfigurationProperties' 
+2017:12:20 13:54:57.630 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Removing PropertySource 'defaultProperties' 
+2017:12:20 13:54:58.483 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http) 
+2017:12:20 13:54:58.499 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2017:12:20 13:54:58.500 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.23 
+2017:12:20 13:54:58.587 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2017:12:20 13:54:58.587 DEBUG --- [localhost-startStop-1] o.s.web.context.ContextLoader : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT] 
+2017:12:20 13:54:58.587 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2427 ms 
+2017:12:20 13:54:58.773 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2017:12:20 13:54:58.779 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2017:12:20 13:54:58.780 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2017:12:20 13:54:58.781 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2017:12:20 13:54:58.781 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2017:12:20 13:54:58.814 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Replacing PropertySource 'servletContextInitParams' with 'servletContextInitParams' 
+2017:12:20 13:54:59.797 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e82df6a: startup date [Wed Dec 20 13:54:56 KST 2017]; root of context hierarchy 
+2017:12:20 13:54:59.947 DEBUG --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e82df6a: startup date [Wed Dec 20 13:54:56 KST 2017]; root of context hierarchy 
+2017:12:20 13:54:59.967 DEBUG --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 3 request handler methods found on class edu.dongguk.moodlight.controller.ColorController: {public void edu.dongguk.moodlight.controller.ColorController.addColor()={[/api/colors/jh],methods=[POST]}, public void edu.dongguk.moodlight.controller.ColorController.addColor(edu.dongguk.moodlight.domain.Color)={[/api/colors],methods=[POST]}, public void edu.dongguk.moodlight.controller.ColorController.addRandomColor(int)={[/api/colors/{num}],methods=[GET]}} 
+2017:12:20 13:54:59.968 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/colors/jh],methods=[POST]}" onto public void edu.dongguk.moodlight.controller.ColorController.addColor() 
+2017:12:20 13:54:59.971 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/colors],methods=[POST]}" onto public void edu.dongguk.moodlight.controller.ColorController.addColor(edu.dongguk.moodlight.domain.Color) 
+2017:12:20 13:54:59.971 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/colors/{num}],methods=[GET]}" onto public void edu.dongguk.moodlight.controller.ColorController.addRandomColor(int) 
+2017:12:20 13:54:59.973 DEBUG --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 3 request handler methods found on class edu.dongguk.moodlight.controller.FileContoller: {public void edu.dongguk.moodlight.controller.FileContoller.addVoiceFile(edu.dongguk.moodlight.domain.Voice,org.springframework.web.multipart.MultipartFile)={[/api/files],methods=[POST]}, public java.util.List edu.dongguk.moodlight.controller.FileContoller.getVoicesByToken(java.lang.String)={[/api/files/box/{token}],methods=[GET]}, public void edu.dongguk.moodlight.controller.FileContoller.getVoiceByVoiceNum(int,javax.servlet.http.HttpServletResponse) throws java.io.FileNotFoundException={[/api/files/{voiceNum}],methods=[GET]}} 
+2017:12:20 13:54:59.973 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/files],methods=[POST]}" onto public void edu.dongguk.moodlight.controller.FileContoller.addVoiceFile(edu.dongguk.moodlight.domain.Voice,org.springframework.web.multipart.MultipartFile) 
+2017:12:20 13:54:59.974 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/files/box/{token}],methods=[GET]}" onto public java.util.List<edu.dongguk.moodlight.domain.Voice> edu.dongguk.moodlight.controller.FileContoller.getVoicesByToken(java.lang.String) 
+2017:12:20 13:54:59.974 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/files/{voiceNum}],methods=[GET]}" onto public void edu.dongguk.moodlight.controller.FileContoller.getVoiceByVoiceNum(int,javax.servlet.http.HttpServletResponse) throws java.io.FileNotFoundException 
+2017:12:20 13:54:59.975 DEBUG --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 2 request handler methods found on class edu.dongguk.moodlight.controller.QuestionController: {public edu.dongguk.moodlight.domain.Question edu.dongguk.moodlight.controller.QuestionController.getQuestionById()={[/api/questions/today],methods=[GET]}, public edu.dongguk.moodlight.domain.Question edu.dongguk.moodlight.controller.QuestionController.postQuestionById()={[/api/questions/today],methods=[POST]}} 
+2017:12:20 13:54:59.976 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/questions/today],methods=[GET]}" onto public edu.dongguk.moodlight.domain.Question edu.dongguk.moodlight.controller.QuestionController.getQuestionById() 
+2017:12:20 13:54:59.976 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/questions/today],methods=[POST]}" onto public edu.dongguk.moodlight.domain.Question edu.dongguk.moodlight.controller.QuestionController.postQuestionById() 
+2017:12:20 13:54:59.981 DEBUG --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 6 request handler methods found on class edu.dongguk.moodlight.controller.UserController: {public void edu.dongguk.moodlight.controller.UserController.addUser(edu.dongguk.moodlight.domain.UserDTO)={[/api/users],methods=[POST]}, public java.util.List edu.dongguk.moodlight.controller.UserController.getUsers()={[/api/users],methods=[GET]}, public void edu.dongguk.moodlight.controller.UserController.addMoodLight(edu.dongguk.moodlight.domain.User)={[/api/users],methods=[PUT]}, public java.util.List edu.dongguk.moodlight.controller.UserController.getUserPreferencesByToken(java.lang.String)={[/api/users/{token}],methods=[GET]}, public edu.dongguk.moodlight.domain.UserPreference edu.dongguk.moodlight.controller.UserController.getDeepLearningTest()={[/api/users/test],methods=[GET]}, public void edu.dongguk.moodlight.controller.UserController.postDeepLearningTest(java.lang.String)={[/api/users/test],methods=[POST]}} 
+2017:12:20 13:54:59.982 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/users],methods=[POST]}" onto public void edu.dongguk.moodlight.controller.UserController.addUser(edu.dongguk.moodlight.domain.UserDTO) 
+2017:12:20 13:54:59.982 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/users],methods=[GET]}" onto public java.util.List<edu.dongguk.moodlight.domain.User> edu.dongguk.moodlight.controller.UserController.getUsers() 
+2017:12:20 13:54:59.983 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/users],methods=[PUT]}" onto public void edu.dongguk.moodlight.controller.UserController.addMoodLight(edu.dongguk.moodlight.domain.User) 
+2017:12:20 13:54:59.984 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/users/{token}],methods=[GET]}" onto public java.util.List<edu.dongguk.moodlight.domain.UserPreference> edu.dongguk.moodlight.controller.UserController.getUserPreferencesByToken(java.lang.String) 
+2017:12:20 13:54:59.984 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/users/test],methods=[GET]}" onto public edu.dongguk.moodlight.domain.UserPreference edu.dongguk.moodlight.controller.UserController.getDeepLearningTest() 
+2017:12:20 13:54:59.985 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/users/test],methods=[POST]}" onto public void edu.dongguk.moodlight.controller.UserController.postDeepLearningTest(java.lang.String) 
+2017:12:20 13:54:59.988 DEBUG --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 2 request handler methods found on class org.springframework.boot.autoconfigure.web.BasicErrorController: {public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)={[/error]}, public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/error],produces=[text/html]}} 
+2017:12:20 13:54:59.988 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2017:12:20 13:54:59.989 INFO  --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2017:12:20 13:55:00.021 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Looking for URL mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e82df6a: startup date [Wed Dec 20 13:54:56 KST 2017]; root of context hierarchy 
+2017:12:20 13:55:00.022 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified 
+2017:12:20 13:55:00.022 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified 
+2017:12:20 13:55:00.022 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified 
+2017:12:20 13:55:00.022 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified 
+2017:12:20 13:55:00.022 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified 
+2017:12:20 13:55:00.022 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified 
+2017:12:20 13:55:00.023 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'moodlightApplication': no URL paths identified 
+2017:12:20 13:55:00.023 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': no URL paths identified 
+2017:12:20 13:55:00.023 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'colorController': no URL paths identified 
+2017:12:20 13:55:00.023 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'fileContoller': no URL paths identified 
+2017:12:20 13:55:00.023 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'questionController': no URL paths identified 
+2017:12:20 13:55:00.023 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'userController': no URL paths identified 
+2017:12:20 13:55:00.023 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'colorService': no URL paths identified 
+2017:12:20 13:55:00.023 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'diffuserService': no URL paths identified 
+2017:12:20 13:55:00.024 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'fileService': no URL paths identified 
+2017:12:20 13:55:00.024 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'questionService': no URL paths identified 
+2017:12:20 13:55:00.024 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'userService': no URL paths identified 
+2017:12:20 13:55:00.024 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified 
+2017:12:20 13:55:00.024 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.024 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified 
+2017:12:20 13:55:00.024 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified 
+2017:12:20 13:55:00.025 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration': no URL paths identified 
+2017:12:20 13:55:00.025 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'standardJacksonObjectMapperBuilderCustomizer': no URL paths identified 
+2017:12:20 13:55:00.025 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': no URL paths identified 
+2017:12:20 13:55:00.025 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified 
+2017:12:20 13:55:00.025 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified 
+2017:12:20 13:55:00.025 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified 
+2017:12:20 13:55:00.026 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified 
+2017:12:20 13:55:00.027 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified 
+2017:12:20 13:55:00.029 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'jacksonObjectMapper': no URL paths identified 
+2017:12:20 13:55:00.029 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.030 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'jsonComponentModule': no URL paths identified 
+2017:12:20 13:55:00.030 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified 
+2017:12:20 13:55:00.030 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'websocketContainerCustomizer': no URL paths identified 
+2017:12:20 13:55:00.030 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.030 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': no URL paths identified 
+2017:12:20 13:55:00.031 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'tomcatEmbeddedServletContainerFactory': no URL paths identified 
+2017:12:20 13:55:00.031 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.031 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified 
+2017:12:20 13:55:00.031 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'errorPageRegistrarBeanPostProcessor': no URL paths identified 
+2017:12:20 13:55:00.031 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified 
+2017:12:20 13:55:00.031 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'dispatcherServlet': no URL paths identified 
+2017:12:20 13:55:00.031 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties': no URL paths identified 
+2017:12:20 13:55:00.031 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': no URL paths identified 
+2017:12:20 13:55:00.032 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'dispatcherServletRegistration': no URL paths identified 
+2017:12:20 13:55:00.032 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.032 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.032 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'defaultValidator': no URL paths identified 
+2017:12:20 13:55:00.032 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'methodValidationPostProcessor': no URL paths identified 
+2017:12:20 13:55:00.032 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified 
+2017:12:20 13:55:00.032 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'error': no URL paths identified 
+2017:12:20 13:55:00.032 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'beanNameViewResolver': no URL paths identified 
+2017:12:20 13:55:00.032 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration': no URL paths identified 
+2017:12:20 13:55:00.032 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'conventionErrorViewResolver': no URL paths identified 
+2017:12:20 13:55:00.033 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.033 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'errorAttributes': no URL paths identified 
+2017:12:20 13:55:00.033 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'basicErrorController': no URL paths identified 
+2017:12:20 13:55:00.033 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'errorPageCustomizer': no URL paths identified 
+2017:12:20 13:55:00.033 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified 
+2017:12:20 13:55:00.033 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties': no URL paths identified 
+2017:12:20 13:55:00.033 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified 
+2017:12:20 13:55:00.034 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified 
+2017:12:20 13:55:00.034 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'requestMappingHandlerMapping': no URL paths identified 
+2017:12:20 13:55:00.034 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mvcValidator': no URL paths identified 
+2017:12:20 13:55:00.034 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mvcContentNegotiationManager': no URL paths identified 
+2017:12:20 13:55:00.034 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mvcPathMatcher': no URL paths identified 
+2017:12:20 13:55:00.034 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mvcUrlPathHelper': no URL paths identified 
+2017:12:20 13:55:00.034 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'viewControllerHandlerMapping': no URL paths identified 
+2017:12:20 13:55:00.034 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'beanNameHandlerMapping': no URL paths identified 
+2017:12:20 13:55:00.034 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'resourceHandlerMapping': no URL paths identified 
+2017:12:20 13:55:00.035 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mvcResourceUrlProvider': no URL paths identified 
+2017:12:20 13:55:00.035 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'defaultServletHandlerMapping': no URL paths identified 
+2017:12:20 13:55:00.035 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mvcConversionService': no URL paths identified 
+2017:12:20 13:55:00.035 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mvcUriComponentsContributor': no URL paths identified 
+2017:12:20 13:55:00.035 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified 
+2017:12:20 13:55:00.035 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified 
+2017:12:20 13:55:00.035 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'handlerExceptionResolver': no URL paths identified 
+2017:12:20 13:55:00.035 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mvcViewResolver': no URL paths identified 
+2017:12:20 13:55:00.035 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mvcHandlerMappingIntrospector': no URL paths identified 
+2017:12:20 13:55:00.035 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified 
+2017:12:20 13:55:00.036 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'faviconHandlerMapping': no URL paths identified 
+2017:12:20 13:55:00.038 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'faviconRequestHandler': no URL paths identified 
+2017:12:20 13:55:00.038 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified 
+2017:12:20 13:55:00.038 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'defaultViewResolver': no URL paths identified 
+2017:12:20 13:55:00.038 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'viewResolver': no URL paths identified 
+2017:12:20 13:55:00.038 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'welcomePageHandlerMapping': no URL paths identified 
+2017:12:20 13:55:00.038 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'requestContextFilter': no URL paths identified 
+2017:12:20 13:55:00.038 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.038 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified 
+2017:12:20 13:55:00.038 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'httpPutFormContentFilter': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'dataSource': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'tomcatPoolDataSourceMetadataProvider': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'dataSourceInitializer': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'colorMapper': no URL paths identified 
+2017:12:20 13:55:00.039 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'diffuserMapper': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'fileMapper': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'questionMapper': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'userMapper': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'sqlSessionFactory': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'sqlSessionTemplate': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mbeanExporter': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'objectNamingStrategy': no URL paths identified 
+2017:12:20 13:55:00.040 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mbeanServer': no URL paths identified 
+2017:12:20 13:55:00.041 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.041 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'springApplicationAdminRegistrar': no URL paths identified 
+2017:12:20 13:55:00.041 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.041 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.041 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified 
+2017:12:20 13:55:00.041 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified 
+2017:12:20 13:55:00.041 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'stringHttpMessageConverter': no URL paths identified 
+2017:12:20 13:55:00.041 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties': no URL paths identified 
+2017:12:20 13:55:00.041 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified 
+2017:12:20 13:55:00.041 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified 
+2017:12:20 13:55:00.042 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration': no URL paths identified 
+2017:12:20 13:55:00.042 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.042 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'messageConverters': no URL paths identified 
+2017:12:20 13:55:00.042 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.042 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'transactionManager': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'jdbcTemplate': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'transactionAttributeSource': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'transactionInterceptor': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified 
+2017:12:20 13:55:00.043 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'transactionTemplate': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'platformTransactionManagerCustomizers': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'characterEncodingFilter': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'localeCharsetMappingsCustomizer': no URL paths identified 
+2017:12:20 13:55:00.044 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.045 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'multipartConfigElement': no URL paths identified 
+2017:12:20 13:55:00.045 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'multipartResolver': no URL paths identified 
+2017:12:20 13:55:00.045 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties': no URL paths identified 
+2017:12:20 13:55:00.045 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.045 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'serverProperties': no URL paths identified 
+2017:12:20 13:55:00.045 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'duplicateServerPropertiesDetector': no URL paths identified 
+2017:12:20 13:55:00.045 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration': no URL paths identified 
+2017:12:20 13:55:00.045 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'restTemplateBuilder': no URL paths identified 
+2017:12:20 13:55:00.045 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration': no URL paths identified 
+2017:12:20 13:55:00.045 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'autoConfigurationReport': no URL paths identified 
+2017:12:20 13:55:00.046 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'springApplicationArguments': no URL paths identified 
+2017:12:20 13:55:00.046 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'springBootBanner': no URL paths identified 
+2017:12:20 13:55:00.046 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'springBootLoggingSystem': no URL paths identified 
+2017:12:20 13:55:00.046 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'environment': no URL paths identified 
+2017:12:20 13:55:00.046 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'systemProperties': no URL paths identified 
+2017:12:20 13:55:00.047 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'systemEnvironment': no URL paths identified 
+2017:12:20 13:55:00.048 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified 
+2017:12:20 13:55:00.048 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'messageSource': no URL paths identified 
+2017:12:20 13:55:00.048 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'applicationEventMulticaster': no URL paths identified 
+2017:12:20 13:55:00.048 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'servletContext': no URL paths identified 
+2017:12:20 13:55:00.048 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'contextParameters': no URL paths identified 
+2017:12:20 13:55:00.049 DEBUG --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping : Rejected bean name 'contextAttributes': no URL paths identified 
+2017:12:20 13:55:00.077 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2017:12:20 13:55:00.077 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2017:12:20 13:55:00.101 DEBUG --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Looking for exception mappings: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e82df6a: startup date [Wed Dec 20 13:54:56 KST 2017]; root of context hierarchy 
+2017:12:20 13:55:00.155 INFO  --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2017:12:20 13:55:00.575 INFO  --- [main] o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup 
+2017:12:20 13:55:00.592 DEBUG --- [main] o.s.w.s.r.ResourceUrlProvider : Looking for resource handler mappings 
+2017:12:20 13:55:00.593 DEBUG --- [main] o.s.w.s.r.ResourceUrlProvider : Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@2a03d65c] 
+2017:12:20 13:55:00.593 DEBUG --- [main] o.s.w.s.r.ResourceUrlProvider : Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@6642dc5a] 
+2017:12:20 13:55:00.593 DEBUG --- [main] o.s.w.s.r.ResourceUrlProvider : Found resource handler mapping: URL pattern="/**", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@43da41e] 
+2017:12:20 13:55:00.700 INFO  --- [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http) 
+2017:12:20 13:55:00.700 DEBUG --- [main] o.s.w.c.s.StandardServletEnvironment : Adding PropertySource 'server.ports' with highest search precedence 
+2017:12:20 13:55:00.705 INFO  --- [main] e.d.moodlight.MoodlightApplication : Started MoodlightApplication in 5.259 seconds (JVM running for 6.433) 
+2017:12:20 13:55:00.705 ERROR --- [main] e.d.moodlight.MoodlightApplication : Message logged at ERROR level 
+2017:12:20 13:55:00.705 WARN  --- [main] e.d.moodlight.MoodlightApplication : Message logged at WARN level 
+2017:12:20 13:55:00.705 INFO  --- [main] e.d.moodlight.MoodlightApplication : Message logged at INFO level 
+2017:12:20 13:55:05.419 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Initializing servlet 'dispatcherServlet' 
+2017:12:20 13:55:05.425 INFO  --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2017:12:20 13:55:05.425 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2017:12:20 13:55:05.425 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@8067c03] 
+2017:12:20 13:55:05.434 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@6cf2a371] 
+2017:12:20 13:55:05.444 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@7719f239] 
+2017:12:20 13:55:05.453 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4d1b2e71] 
+2017:12:20 13:55:05.464 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@1a4d8a72] 
+2017:12:20 13:55:05.465 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet] 
+2017:12:20 13:55:05.465 INFO  --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms 
+2017:12:20 13:55:05.465 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Servlet 'dispatcherServlet' configured successfully 
+2017:12:20 13:55:05.493 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : DispatcherServlet with name 'dispatcherServlet' processing POST request for [/api/colors] 
+2017:12:20 13:55:05.501 DEBUG --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /api/colors 
+2017:12:20 13:55:05.504 DEBUG --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public void edu.dongguk.moodlight.controller.ColorController.addColor(edu.dongguk.moodlight.domain.Color)] 
+2017:12:20 13:55:05.688 DEBUG --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Read [class edu.dongguk.moodlight.domain.Color] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@35fb22a9] 
+2017:12:20 13:55:05.741 INFO  --- [http-nio-8080-exec-1] e.d.m.controller.ColorController : Color(token=AIJF83uaf, r=85, g=89, b=62, flag=4, discomfortRate=71) 
+2017:12:20 13:55:06.767 INFO  --- [http-nio-8080-exec-1] o.s.b.f.xml.XmlBeanDefinitionReader : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml] 
+2017:12:20 13:55:06.886 INFO  --- [http-nio-8080-exec-1] o.s.j.support.SQLErrorCodesFactory : SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana] 
+2017:12:20 13:55:06.902 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling 
+2017:12:20 13:55:06.903 DEBUG --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet : Successfully completed request 
+2017:12:20 13:55:17.495 DEBUG --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet : DispatcherServlet with name 'dispatcherServlet' processing POST request for [/api/colors] 
+2017:12:20 13:55:17.498 DEBUG --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /api/colors 
+2017:12:20 13:55:17.498 DEBUG --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public void edu.dongguk.moodlight.controller.ColorController.addColor(edu.dongguk.moodlight.domain.Color)] 
+2017:12:20 13:55:17.500 DEBUG --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Read [class edu.dongguk.moodlight.domain.Color] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@35fb22a9] 
+2017:12:20 13:55:17.501 INFO  --- [http-nio-8080-exec-2] e.d.m.controller.ColorController : Color(token=AIJF83uaf, r=85, g=89, b=62, flag=4, discomfortRate=71) 
+2017:12:20 13:55:17.508 DEBUG --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling 
+2017:12:20 13:55:17.508 DEBUG --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet : Successfully completed request 
+2017:12:20 14:31:02.219 DEBUG --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet : DispatcherServlet with name 'dispatcherServlet' processing POST request for [/api/questions/today] 
+2017:12:20 14:31:02.225 DEBUG --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /api/questions/today 
+2017:12:20 14:31:02.227 DEBUG --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public edu.dongguk.moodlight.domain.Question edu.dongguk.moodlight.controller.QuestionController.postQuestionById()] 
+2017:12:20 14:31:02.409 DEBUG --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Written [Question(questionId=8, question=종강, situationId=4, date=Tue Dec 19 16:57:10 KST 2017)] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@35fb22a9] 
+2017:12:20 14:31:02.409 DEBUG --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling 
+2017:12:20 14:31:02.409 DEBUG --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet : Successfully completed request 
+2017:12:20 14:35:05.397 DEBUG --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet : DispatcherServlet with name 'dispatcherServlet' processing POST request for [/api/questions/today] 
+2017:12:20 14:35:05.404 DEBUG --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /api/questions/today 
+2017:12:20 14:35:05.405 DEBUG --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public edu.dongguk.moodlight.domain.Question edu.dongguk.moodlight.controller.QuestionController.postQuestionById()] 
+2017:12:20 14:35:05.416 DEBUG --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Written [Question(questionId=6, question=교수님과 식사, situationId=1, date=Tue Dec 19 14:40:53 KST 2017)] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@35fb22a9] 
+2017:12:20 14:35:05.416 DEBUG --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling 
+2017:12:20 14:35:05.416 DEBUG --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet : Successfully completed request 
+2017:12:20 14:35:29.157 DEBUG --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet : DispatcherServlet with name 'dispatcherServlet' processing POST request for [/api/questions/today] 
+2017:12:20 14:35:29.158 DEBUG --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /api/questions/today 
+2017:12:20 14:35:29.158 DEBUG --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public edu.dongguk.moodlight.domain.Question edu.dongguk.moodlight.controller.QuestionController.postQuestionById()] 
+2017:12:20 14:35:29.164 DEBUG --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Written [Question(questionId=6, question=교수님과 식사, situationId=1, date=Tue Dec 19 14:40:53 KST 2017)] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@35fb22a9] 
+2017:12:20 14:35:29.164 DEBUG --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling 
+2017:12:20 14:35:29.164 DEBUG --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet : Successfully completed request 
+2017:12:20 14:35:49.934 DEBUG --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet : DispatcherServlet with name 'dispatcherServlet' processing POST request for [/api/colors] 
+2017:12:20 14:35:49.937 DEBUG --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /api/colors 
+2017:12:20 14:35:49.937 DEBUG --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public void edu.dongguk.moodlight.controller.ColorController.addColor(edu.dongguk.moodlight.domain.Color)] 
+2017:12:20 14:35:49.939 DEBUG --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Read [class edu.dongguk.moodlight.domain.Color] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@35fb22a9] 
+2017:12:20 14:35:49.942 INFO  --- [http-nio-8080-exec-9] e.d.m.controller.ColorController : Color(token=start, r=0, g=228, b=255, flag=1, discomfortRate=1) 
+2017:12:20 14:35:49.959 DEBUG --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling 
+2017:12:20 14:35:49.961 DEBUG --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet : Successfully completed request 
+2017:12:20 14:36:15.019 DEBUG --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet : DispatcherServlet with name 'dispatcherServlet' processing POST request for [/api/colors] 
+2017:12:20 14:36:15.021 DEBUG --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /api/colors 
+2017:12:20 14:36:15.022 DEBUG --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public void edu.dongguk.moodlight.controller.ColorController.addColor(edu.dongguk.moodlight.domain.Color)] 
+2017:12:20 14:36:15.023 DEBUG --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Read [class edu.dongguk.moodlight.domain.Color] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@35fb22a9] 
+2017:12:20 14:36:15.024 INFO  --- [http-nio-8080-exec-10] e.d.m.controller.ColorController : Color(token=start, r=255, g=35, b=0, flag=1, discomfortRate=1) 
+2017:12:20 14:36:15.034 DEBUG --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling 
+2017:12:20 14:36:15.035 DEBUG --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet : Successfully completed request 
+2017:12:20 14:47:52.783 INFO  --- [Thread-3] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e82df6a: startup date [Wed Dec 20 13:54:56 KST 2017]; root of context hierarchy 
+2017:12:20 14:47:52.795 INFO  --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 

@@ -1,6 +1,7 @@
 package edu.dongguk.moodlight.service;
 
 import edu.dongguk.moodlight.domain.User;
+import edu.dongguk.moodlight.domain.UserPreference;
 import edu.dongguk.moodlight.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,5 +25,13 @@ public class UserService {
 
     public List<User> getUsers(){
         return userMapper.findAll();
+    }
+
+    public void modifyMoodLight(User user){
+        userMapper.updateMoodLight(user);
+    }
+
+    public List<UserPreference> getUserPreferencesByToken(String token){
+        return userMapper.selectPreferenceByUser(token);
     }
 }

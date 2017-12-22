@@ -1,6 +1,7 @@
 buildscript {
 	ext {
 		springBootVersion = '1.5.8.RELEASE'
+		dl4j_version = "0.8.0"
 	}
 	repositories {
 		mavenCentral()
@@ -30,5 +31,9 @@ dependencies {
 	compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+	compile "org.deeplearning4j:deeplearning4j-core:${dl4j_version}"
+	compile "org.nd4j:nd4j-native-platform:${dl4j_version}"
+
 
 }
